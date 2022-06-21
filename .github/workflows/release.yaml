@@ -65,7 +65,7 @@ jobs:
         target_repository: withlazers/charts-withlazers
         target_path: ./charts/tplsrv
         commit_message: |
-          automatic pipeline release of tplsrv-${GITHUB_REF_NAME#v}
+          automatic pipeline release of tplsrv ${{ github.ref_name }}
 
           Source: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
 
